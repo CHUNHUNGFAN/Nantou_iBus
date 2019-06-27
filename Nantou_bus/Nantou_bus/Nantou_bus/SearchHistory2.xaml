@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Nantou_bus.SearchHistory2" 
+             Title="查詢記錄">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+                    <Entry x:Name="StartRouteSearchBar" HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+                <StackLayout Orientation="Vertical"  HorizontalOptions="End">
+                    <Button Text="搜尋"  Clicked="Search_Clicked"/>
+                </StackLayout>
+            </StackLayout>
+            <Button Text="現在位置" Clicked="Refresh"  />
+            <Button Text="搜尋記錄1"  x:Name="SearchGH1" BackgroundColor="Transparent" BorderColor="Transparent"/>
+            <Button Text="搜尋記錄2" x:Name="SearchGH2" BackgroundColor="Transparent" BorderColor="Transparent"/>
+            <Button Text="搜尋記錄3" x:Name="SearchGH3" BackgroundColor="Transparent" BorderColor="Transparent"/>
+            <Button Text="搜尋記錄4" x:Name="SearchGH4" BackgroundColor="Transparent" BorderColor="Transparent"/>
+            <Button Text="搜尋記錄5" x:Name="SearchGH5" BackgroundColor="Transparent" BorderColor="Transparent"/>
+            <ListView x:Name="HistoryRouteListView"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

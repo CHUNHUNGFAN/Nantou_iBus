@@ -1,0 +1,23 @@
+﻿using SQLite;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Nantou_bus
+{
+    public class MyRecord
+    {
+        public MyRecord()
+        {
+        }
+
+        [PrimaryKey, AutoIncrement]
+        public int ID { get; set; }
+        public string UserName { get; set; }
+        public string SettingName { get; set; }
+        public bool Done { get; set; }
+
+    }
+}

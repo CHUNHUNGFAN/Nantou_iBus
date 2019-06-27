@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App7.SettingHome">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+                    <Entry x:Name="HomeEntry1"/>
+                </StackLayout>
+                <StackLayout Orientation="Vertical"  HorizontalOptions="End">
+                    <Button Text="儲存" Clicked="Button_Clicked"/>
+                </StackLayout>
+            </StackLayout>
+            <Entry x:Name="HomeEntry2" VerticalOptions="EndAndExpand"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

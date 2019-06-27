@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1"
+             x:Class="App1.MainPage">
+
+    <ContentPage Title="評分系統">
+        <ScrollView>
+            <StackLayout Spacing="0" Padding="10" BackgroundColor="White">
+                <StackLayout HeightRequest="50" VerticalOptions="Start" HorizontalOptions="FillAndExpand" Spacing="20" BackgroundColor="Aqua">
+                    <Label Text="南投客運" FontSize="28" HorizontalOptions="Center" VerticalOptions="Center" FontAttributes="Bold" />
+                </StackLayout>
+                <StackLayout>
+                    <Button Text="客服網頁" VerticalOptions="Start" HorizontalOptions="FillAndExpand" Clicked ="ButtonClicked01" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label FontSize="14" Text="我要評分：" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="100" FontAttributes="Bold" />
+                    <!--<Button Text="\u21E6" />-->
+                    <Entry HorizontalOptions="FillAndExpand" Text="1 - 5" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label FontSize="14" Text="客服專線：" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="100" FontAttributes="Bold" />
+
+                    <Label Text="(049)2984-031" TextColor="Black" FontAttributes="Bold" HorizontalOptions="FillAndExpand" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HeightRequest="20" VerticalOptions="Center">
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label FontSize="14" Text="聯絡我們" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="100" FontAttributes="Bold" />
+                </StackLayout>
+                
+                <StackLayout Orientation="Horizontal">
+                    <Label FontSize="14" Text="您的信箱：" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="100" FontAttributes="Bold" />
+                    <Entry x:Name="entry01" HorizontalOptions="FillAndExpand" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label FontSize="14" Text="我的建議：" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="100" FontAttributes="Bold" />
+                    <Entry x:Name="entry02" HorizontalOptions="FillAndExpand" HeightRequest="100" />
+                </StackLayout>
+                
+                <StackLayout>
+                    <Button Text="送出" Clicked ="ButtonClicked02" />
+                    <Button Text="清除" HorizontalOptions="FillAndExpand" Clicked ="ButtonClicked03" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label FontSize="14" x:Name="lable01" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center" />
+                </StackLayout>
+                <WebView x:Name="browser" WidthRequest="200" HeightRequest="600" />
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage>
+
+
+</TabbedPage>

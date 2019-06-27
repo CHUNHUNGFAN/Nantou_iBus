@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App7.Result">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="起站：暨南大學" HorizontalTextAlignment="Center"/>
+            <Label Text="訖站：日月潭" HorizontalTextAlignment="Center"/>
+            <Button Text="6670 臺中-日月潭" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

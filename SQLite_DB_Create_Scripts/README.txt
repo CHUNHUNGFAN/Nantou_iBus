@@ -1,0 +1,6 @@
+2017/08/25
+bus_routes這個table目前的資料是全台灣路線的資料
+bus_routes_in_nantou（在遠端MySQL Database，尚未納入這邊）是所有有經過南投縣的路線，但是會造成某些站牌抓不到資料Crash的情況，目前還沒修正，先暫時以
+
+bus_stops 是路線有經過南投的該路線所有站牌資料
+bus_stops_on_route同上

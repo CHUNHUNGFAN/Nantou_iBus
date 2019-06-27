@@ -1,0 +1,39 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace App7
+{
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class PreSet2 : ContentPage
+	{
+		public PreSet2 ()
+		{
+			InitializeComponent ();
+		}
+
+        public void Button_Clicked(object sender, EventArgs e)
+        {
+            this.Navigation.PushAsync(new SettingHome());
+
+        }
+
+        public void Button_Clicked_1(object sender, EventArgs e)
+        {
+            var fooItem = SearchHistory.fooDoggyDatabase.GetItems().Last();
+            HomeButton.Text = $"住家: {fooItem.UserName} ";
+           
+        }
+
+        private void HomeButton_Clicked(object sender, EventArgs e)
+        {
+             this.Navigation.PushAsync(new Result());
+        }
+    }
+
+}
